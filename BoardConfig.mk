@@ -18,7 +18,7 @@ BOARD_VENDOR := htc
 
 TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
-COMMON_GLOBAL_CFLAGS   += -DREFRESH_RATE=65 -DQCOM_NO_SECURE_PLAYBACK -DBINDER_COMPAT
+COMMON_GLOBAL_CFLAGS   += -DREFRESH_RATE=65 -DQCOM_NO_SECURE_PLAYBACK -DQCOM_LEGACY_OMX
 COMMON_GLOBAL_CFLAGS   += -DQCOM_ICS_DECODERS -DQCOM_HARDWARE -DNO_UPDATE_PREVIEW
 
 # Arch related defines and optimizations
@@ -74,6 +74,7 @@ BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun0/file"
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/pico/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/htc/pico/bluetooth/vnd_pico.txt
 
 TARGET_SPECIFIC_HEADER_PATH := device/htc/pico/include
 

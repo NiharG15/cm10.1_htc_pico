@@ -129,6 +129,16 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     librs_jni
 
+
+#Bluetooh
+PRODUCT_PACKAGES += \
+    brcm_patchram_plus
+
+#Bluetooth conf
+PRODUCT_COPY_FILES += \
+    system/bluetooth/data/main.le.conf:system/etc/bluetooth/main.conf \
+    device/htc/pico/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+
 # Vold 
 PRODUCT_COPY_FILES += \
     device/htc/pico/files/etc/vold.fstab:system/etc/vold.fstab
